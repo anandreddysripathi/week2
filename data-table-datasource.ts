@@ -4,11 +4,7 @@ import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 
 
-export interface DataTableItem {
-  name: string;
-  id: number;
-  marks:number;
-}
+import {DataTableItem} from './datainfo';//here i am importing an interface from datainfo.ts file
 
 const student_data: DataTableItem[] = [
   {id: 1, name: 'Anand',marks:70},
